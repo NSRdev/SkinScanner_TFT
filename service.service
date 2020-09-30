@@ -1,0 +1,14 @@
+[Unit]
+Description=Servicio API SkinScanner
+After=multi-user.target
+Conflicts=getty@tty1.service
+ 
+[Service]
+Type=simple
+ExecStart=/home/nahudel98/miniconda3/bin/python3.7 /home/nahudel98/tfg_data/fastai_server.py
+User=nahudel98
+WorkingDirectory=/home/nahudel98
+Restart=on-failure
+ 
+[Install]
+WantedBy=multi-user.target

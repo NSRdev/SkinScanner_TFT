@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_scanner">
+
+    <fragment
+        android:id="@+id/navigation_history"
+        android:name="com.example.skinscanner.ui.history.HistoryFragment"
+        android:label="@string/title_history"
+        tools:layout="@layout/fragment_history" />
+
+    <fragment
+        android:id="@+id/navigation_scanner"
+        android:name="com.example.skinscanner.ui.scanner.ScannerFragment"
+        android:label="@string/title_scanner"
+        tools:layout="@layout/fragment_scanner" />
+
+    <fragment
+        android:id="@+id/navigation_dermatologists"
+        android:name="com.example.skinscanner.ui.dermatologists.DermatologistsFragment"
+        android:label="@string/title_dermatologists"
+        tools:layout="@layout/fragment_dermatologists" />
+</navigation>
